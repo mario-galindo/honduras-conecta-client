@@ -7,22 +7,11 @@ import { environment } from '../environments/environment'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { SigninComponent } from './components/signin/signin.component';
-import { SignupComponent } from './components/signup/signup.component';
-import { ForgotpasswordComponent } from './components/forgotpassword/forgotpassword.component';
-import { VerifyemailComponent } from './components/verifyemail/verifyemail.component';
-
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    DashboardComponent,
-    SigninComponent,
-    SignupComponent,
-    ForgotpasswordComponent,
-    VerifyemailComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
