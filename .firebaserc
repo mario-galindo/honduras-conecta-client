@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "honduras-conecta": {
+      "hosting": {
+        "honduras-conecta-client": [
+          "honduras-conecta"
+        ]
+      }
+    }
+  }
+}

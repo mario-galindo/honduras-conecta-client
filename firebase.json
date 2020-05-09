@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "honduras-conecta-client",
+      "public": "dist/honduras-conecta-client",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
