@@ -7,12 +7,14 @@ import { environment } from '../environments/environment'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+import { EmailComponent } from './email/email.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    EmailComponent
   ],
   imports: [
     BrowserModule,
