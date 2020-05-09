@@ -7,11 +7,13 @@ import { environment } from '../environments/environment'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SuperSecretComponent } from './super-secret/super-secret.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SuperSecretComponent
   ],
   imports: [
     BrowserModule,
