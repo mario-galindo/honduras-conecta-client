@@ -8,10 +8,10 @@ import { environment } from '../environments/environment'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SuperSecretComponent } from './super-secret/super-secret.component';
-import { LoginComponent } from './login/login.component';
-import { EmailComponent } from './email/email.component';
-import { SignupComponent } from './signup/signup.component';
-import { MembersComponent } from './members/members.component';
+import { LoginComponent } from './components/login/login.component';
+import { EmailComponent } from './components/email/email.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { MembersComponent } from './components/members/members.component';
 
 
 @NgModule({
