@@ -8,12 +8,20 @@ import { environment } from '../environments/environment'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SuperSecretComponent } from './super-secret/super-secret.component';
+import { LoginComponent } from './login/login.component';
+import { EmailComponent } from './email/email.component';
+import { SignupComponent } from './signup/signup.component';
+import { MembersComponent } from './members/members.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SuperSecretComponent
+    SuperSecretComponent,
+    LoginComponent,
+    EmailComponent,
+    SignupComponent,
+    MembersComponent
   ],
   imports: [
     BrowserModule,
