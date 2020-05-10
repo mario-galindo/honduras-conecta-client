@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router'
+import { FormsModule } from '@angular/forms'
 
 @Component({
   selector: 'app-signup',
@@ -7,7 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
-  constructor() { }
+  state: string = '';
+  error: any;
+
+  constructor(private router: Router) {
+
+  }
+
+  onSubmit(formData) {
+
+  }
 
   ngOnInit() {
   }
