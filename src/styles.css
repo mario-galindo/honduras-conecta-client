@@ -12,6 +12,9 @@
 
   body {
     background:#E2E4E6;
+    /* background-image: url('../src/assets/images/main-bg.png');
+    background-attachment: fixed;  
+    background-size: cover; */
     padding-top:4em;
 }
 
