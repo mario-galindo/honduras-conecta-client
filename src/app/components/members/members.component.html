@@ -3,9 +3,14 @@
       <button (click)="logout()" class="basic-btn">Logout</button>
     </header>
     <div id="page" [@moveInLeft]="state">
-      <h2>Hey {{ name.auth.displayName }}!</h2>
+      <!-- <h2>Hey {{ name.auth.displayName }}!</h2>
 
-      <img src="../../../assets/images/filler.png" />
+      <img src="../../../assets/images/filler.png" /> -->
+      <pre>
+        {{user | json}}
+      </pre>
+        <hr>
+        <button class="button" (click)="auth.signOut()">Sign Out</button>
     </div>
     
 </div>

@@ -1,6 +1,7 @@
 import { Component, OnInit,HostBinding } from '@angular/core';
 import { Router } from '@angular/router';
 import {moveIn} from '../../router.animations'
+import { AuthService } from '../../services/auth.service'
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ import {moveIn} from '../../router.animations'
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(public auth:AuthService) { }
 
   ngOnInit() {
   }

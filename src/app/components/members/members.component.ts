@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
 import { moveIn, fallIn, moveInLeft } from '..//..//router.animations'
+import { AuthService } from '../../services/auth.service'
 
 @Component({
   selector: 'app-members',
@@ -14,7 +15,7 @@ export class MembersComponent implements OnInit {
   name: any;
   state: string = '';
 
-  constructor(private router:Router) { }
+  constructor(private router:Router,public auth:AuthService) { }
 
   logout() {
     this.router.navigateByUrl('/login');
