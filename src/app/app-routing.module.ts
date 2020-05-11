@@ -5,13 +5,15 @@ import { AuthGuard } from './services/auth.guard'
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { EmailComponent } from './components/email/email.component';
+import { MembersComponent } from './components/members/members.component';
 
 
 const routes: Routes = [
   { path: 'secret', component: SuperSecretComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'login-email', component: EmailComponent }
+  { path: 'login-email', component: EmailComponent },
+  { path: 'members', component: MembersComponent }
 ];
 
 @NgModule({
