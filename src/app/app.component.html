@@ -35,7 +35,7 @@
   </div>
 </nav>
 <!--/.Navbar -->
-<hr>
+<hr *ngIf="auth.user$ | async">
   <div id="page" [@moveInLeft]="state">
     <div *ngIf="auth.user$ | async as user">
       
