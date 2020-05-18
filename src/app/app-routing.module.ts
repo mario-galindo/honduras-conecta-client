@@ -10,7 +10,6 @@ import { MembersComponent } from './components/members/members.component';
 
 const routes: Routes = [
   { path: 'secret', component: SuperSecretComponent, canActivate: [AuthGuard] },
-  { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'login-email', component: EmailComponent },

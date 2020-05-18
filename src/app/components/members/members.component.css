@@ -9,6 +9,15 @@ header {
     width:100%;
 }
 
+.form-container {
+    background:white;
+    padding:2.5em;
+    width:500px;
+    position:fixed;
+    left:50%;
+    margin-left:-250px;
+}
+
 .basic-btn {
     width:100px;
     margin:0;
