@@ -7,19 +7,13 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
-    <!-- <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home
+        <a class="nav-link" href="#">Organizaciones
           <span class="sr-only">(current)</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-    </ul> -->
+    </ul>
     <ul class="navbar-nav ml-auto nav-flex-icons">
       <li class="nav-item avatar">
         <a class="nav-link p-0" href="#">
@@ -33,7 +27,7 @@
            {{user.displayName}} </a>
         <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
           <a class="dropdown-item" href="#">Mi Cuenta</a>
-          <a class="dropdown-item" href="#">Mi Organizaciones</a>
+          <a class="dropdown-item" href="#">Mis Organizaciones</a>
           <a class="dropdown-item" href="#" (click)="auth.signOut()">Cerrar Sesion</a>
         </div>
       </li>
@@ -41,14 +35,16 @@
   </div>
 </nav>
 <!--/.Navbar -->
-
+<hr>
   <div id="page" [@moveInLeft]="state">
     <div *ngIf="auth.user$ | async as user">
-      <pre>
-          Correo Principal: {{user.email}}
-          Identificador: {{user.uid}}
-        </pre>
-      <hr>
+      
+      <p>
+          <b>Bienvenido</b><br>
+          <b>Correo Principal:</b> {{user.email}}<br>
+          <b>Identificador:</b> {{user.uid}}<br>
+      </p>
+      
     </div>
   </div>
   
