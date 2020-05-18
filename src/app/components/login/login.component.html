@@ -3,9 +3,15 @@
 
   <span class="error" *ngIf="error">{{ error }}</span>
 
-  <button (click)="loginFb()" id="fb">Conectar con Facebook</button><br>
-  <button (click)="auth.googleSignin()" id="google">Conectar con Google</button>
-  <button routerLink="/login-email" id="email">Conectar con Correo</button>
+  <a href="#" class="fb btn">
+    <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+   </a>
+  <button (click)="auth.googleSignin()" class="google btn"><i class="fa fa-google fa-fw">
+  </i>Login with Google+</button>
+  <!-- <a (click)="auth.googleSignin()" href="#" class="google btn"><i class="fa fa-google fa-fw">
+    </i> Login with Google+
+  </a> -->
+  <!-- <button routerLink="/login-email" id="email">Conectar con Correo</button> -->
 
   <a routerLink="/signup" routerLinkActive="active" class="alc">¿Aún no tienes cuenta?<strong> Regístrate </strong></a>
 </div>
