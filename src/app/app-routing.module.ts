@@ -6,6 +6,7 @@ import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { EmailComponent } from './components/email/email.component';
 import { MembersComponent } from './components/members/members.component';
+import { AppComponent } from './app.component';
 
 
 const routes: Routes = [

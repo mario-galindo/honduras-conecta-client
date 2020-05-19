@@ -3,6 +3,8 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { AuthService } from './services/auth.service'
 import { moveIn, fallIn, moveInLeft } from './router.animations'
+import { Router } from '@angular/router'
+
 
 
 @Component({
@@ -20,9 +22,16 @@ export class AppComponent {
 
   constructor(
     firestore: AngularFirestore,
-    public auth:AuthService
+    public auth:AuthService,
+    private router:Router
     ) {
-    this.items = firestore.collection('items').valueChanges();
+      if (!auth.user$) {
+        this.router.navigate(['']);
+      }else{
+        this.router.navigate(['login']);
+      }
+     // this.router.navigate(['']);
+    //this.items = firestore.collection('items').valueChanges();
   }
 
 }
