@@ -14,6 +14,7 @@ export class MembersComponent implements OnInit {
 
   name: any;
   state: string = '';
+  login:string='';
 
   constructor(private router:Router,public auth:AuthService) { }
 

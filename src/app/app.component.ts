@@ -13,8 +13,11 @@ import { moveIn, fallIn, moveInLeft } from './router.animations'
   host: {'[@moveIn]': ''}
 })
 export class AppComponent {
+  
   items: Observable<any[]>;
   title = 'honduras-conecta-client';
+  state:string;
+
   constructor(
     firestore: AngularFirestore,
     public auth:AuthService

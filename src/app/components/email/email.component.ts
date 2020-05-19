@@ -13,6 +13,8 @@ export class EmailComponent implements OnInit {
 
   state: string = '';
   error: any;
+  email: string;
+  password:string;
 
   constructor(private router:Router) { }
 
