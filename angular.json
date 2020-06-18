@@ -126,5 +126,8 @@
       }
     }
   },
-  "defaultProject": "honduras-conecta-client"
+  "defaultProject": "honduras-conecta-client",
+  "cli": {
+    "analytics": false
+  }
 }
