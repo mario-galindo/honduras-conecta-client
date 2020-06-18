@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
  body {
 	 margin: 0;
 	 font-family: 'Nunito', 'sans-serif';

@@ -5,8 +5,6 @@ import { AuthService } from './services/auth.service'
 import { moveIn, fallIn, moveInLeft } from './router.animations'
 import { Router } from '@angular/router'
 
-
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -25,11 +23,12 @@ export class AppComponent {
     public auth:AuthService,
     private router:Router
     ) {
-      if (!auth.user$) {
-        this.router.navigate(['']);
-      }else{
-        this.router.navigate(['login']);
-      }
+      // if (!auth.user$) {
+      //   this.router.navigate(['']);
+      // }else{
+      //   this.router.navigate(['login']);
+      // }
+
      // this.router.navigate(['']);
     //this.items = firestore.collection('items').valueChanges();
   }
